@@ -1,6 +1,6 @@
 /*
-	File:			fg2_random_spawn.sqf
-	Init:			[] execVM "scripts\randomspawn.sqf" in die >>>init.sqf<<<
+	File:			fg2_randomSpawn.sqf
+	Init:			[] execVM "scripts\fg2_randomSpawn.sqf" in die >>>init.sqf<<<
 	Author:			l4ndl0rd
 */
 
