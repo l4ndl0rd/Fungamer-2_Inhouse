@@ -1,10 +1,10 @@
 /*
-	File:				fg2_heartAttack.sqf
+	File:			fg2_heartAttack.sqf
 	InitPlayerLocal:	nul = [player] execVM "scripts\fg2_heartAttack.sqf";
-						Selbstinteraktion an civ1:
-						a0 = ["Herzinfarkt","Herzinfarkt starten","", {[player]execVM "scripts\fg2_heartAttack.sqf"}, {true}] call ace_interact_menu_fnc_createAction;
-						[name of unit, 1, ["ACE_SelfActions"], a0] call ace_interact_menu_fnc_addActionToObject;
-	Author:				l4ndl0rd
+				Selbstinteraktion an civ1:
+				a0 = ["Herzinfarkt","Herzinfarkt starten","", {[player]execVM "scripts\fg2_heartAttack.sqf"}, {true}] call ace_interact_menu_fnc_createAction;
+				[name of unit, 1, ["ACE_SelfActions"], a0] call ace_interact_menu_fnc_addActionToObject;
+	Author:			l4ndl0rd
 	Version:        	0.0.1
 	Date:           	2021/01/15
 */
