@@ -1,0 +1,160 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=1.5707964;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=129;
+	class ItemIDProvider
+	{
+		nextID=7;
+	};
+	class Camera
+	{
+		pos[]={1902.1794,6.1911664,5735.3989};
+		dir[]={-0.52265453,-0.47874668,-0.7054494};
+		up[]={-0.28500554,0.87794781,-0.38468325};
+		aside[]={-0.80351239,-1.0580698e-007,0.59530783};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"UK3CB_Factions_CHC_O",
+	"A3_Data_F_Curator_Intel",
+	"cba_xeh"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="UK3CB_Factions_CHC";
+			name="3CB Factions - CHC";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item1
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=8683046;
+class ScenarioData
+{
+	author="l4ndl0rd";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1901.3804,5.6317821,5733.4272};
+						angles[]={0,0.24041833,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="UK3CB_CHC_O_ACT";
+					atlOffset=1.4305115e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=1.4305115e-006;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1901.491,5.638072,5734.8691};
+				angles[]={6.2781935,0,0.0024958209};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{if (isServer) then { this setvariable [""recipients"", east]; " \n "this setVariable [""RscAttributeDiaryRecord_texture"",""bilder\Akte.paa"", true]; " \n "data = [this,""RscAttributeDiaryRecord"",[""Gefangenenakte"",""<br /><execute expression='""""bilder\Akte.paa"""" call FG2_fnc_viewDocument'>Akte ansehen</execute>"",""bilder\Akte.paa""]] call bis_fnc_setServerVariable;};}";
+			};
+			id=6;
+			type="Intel_Photos_F";
+			atlOffset=4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="bilder\Akte.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+	};
+};

@@ -1,0 +1,439 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=17;
+	};
+	class Camera
+	{
+		pos[]={1836.4022,10.490769,5566.708};
+		dir[]={0.90178186,-0.40946984,0.13865006};
+		up[]={0.40473551,0.91230869,0.062228926};
+		aside[]={0.1519729,5.0844756e-007,-0.98843294};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Structures_F_Ind_WindPowerPlant",
+	"rhsusf_c_troops",
+	"rhsusf_c_HEMTT_A4"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item2
+		{
+			className="rhsusf_c_HEMTT_A4";
+			name="HEMMTT A4 Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+	};
+};
+randomSeed=10941137;
+class ScenarioData
+{
+	author="l4ndl0rd";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=9;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1848.9561,6.295527,5575.8979};
+				angles[]={0,4.9741364,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [gen_1] execVM ""scripts\fg2_gen\fg2_generator_hookup.sqf"";}";
+				name="gen_1";
+			};
+			id=0;
+			type="Land_PowerGenerator_F";
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1853.4093,5.5015292,5568.0137};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="s1";
+						isPlayer=1;
+					};
+					id=2;
+					type="rhsusf_usmc_marpat_d_engineer";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1848.0336,6.295527,5572.8677};
+				angles[]={0,4.9741364,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [gen_2] execVM ""scripts\fg2_gen\fg2_generator_hookup.sqf"";}";
+				name="gen_2";
+			};
+			id=3;
+			type="Land_PowerGenerator_F";
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1851.4493,5.5095325,5564.8125};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="s2";
+						isPlayable=1;
+					};
+					id=5;
+					type="rhsusf_usmc_marpat_d_officer";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1857.199,7.4250097,5572.3452};
+				angles[]={0,1.8058224,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [lkw1, gen_1, gen_2, 0] execVM ""scripts\fg2_gen\fg2_aa_gen_unload.sqf"";}";
+				name="lkw1";
+			};
+			id=7;
+			type="rhsusf_M977A4_BKIT_M2_usarmy_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit""],[2,4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[10,2,2,2,4]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={1863.9601,5.5,5564.6831};
+			class Attributes
+			{
+				name="gen_load";
+				condition="call{true}";
+				onActivation="call{gen_1 attachTo [lkw1, [0, 0, 0.8] ]; gen_2 attachTo [lkw1, [0, -3, 0.8] ]; " \n "gen_3 attachTo [lkw2, [0, 0, 0.8] ]; gen_4 attachTo [lkw2, [0, -3, 0.8] ]; " \n "}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=11;
+			type="EmptyDetector";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1852.3036,7.4639425,5560.7197};
+				angles[]={0.0075011365,1.8058224,0.0075011365};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [lkw2, gen_3, gen_4, 1] execVM ""scripts\fg2_gen\fg2_aa_gen_unload.sqf"";}";
+				name="lkw2";
+			};
+			id=12;
+			type="rhsusf_M977A4_BKIT_M2_usarmy_d";
+			atlOffset=0.0019440651;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit""],[2,4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[10,2,2,2,4]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1843.059,6.295527,5564.3809};
+				angles[]={0,4.9741364,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [gen_3] execVM ""scripts\fg2_gen\fg2_generator_hookup.sqf"";}";
+				name="gen_3";
+			};
+			id=13;
+			type="Land_PowerGenerator_F";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1842.137,6.295527,5561.3521};
+				angles[]={0,4.9741364,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [gen_4] execVM ""scripts\fg2_gen\fg2_generator_hookup.sqf"";}";
+				name="gen_4";
+			};
+			id=14;
+			type="Land_PowerGenerator_F";
+		};
+	};
+};

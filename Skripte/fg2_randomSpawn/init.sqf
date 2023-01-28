@@ -1,0 +1,1 @@
+[] execVM "scripts\fg2_randomSpawn.sqf"

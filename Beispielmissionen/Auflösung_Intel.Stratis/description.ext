@@ -1,0 +1,52 @@
+﻿class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 1;
+};
+
+
+author = l4ndl0rd;
+onLoadName = Auflösung Bild Test;
+onLoadMission = "";
+onLoadMissionTime = 1;
+
+loadScreen = "";
+
+briefing = 1;
+showWatch = 1;
+showPad = 1;
+showMap = 1;
+showCompass = 1;
+debriefing = 1;
+ShowGPS = 1;
+disabledAI = 0;
+respawn=5;
+respawndelay=3;
+AIKills=1;
+
+class CfgFunctions
+  {
+  	class Intel
+  	{
+  		tag = "FG2";
+  		class documentViewer
+  		{
+  			file = "functions";
+  			class ViewDocument {};
+  		};
+  	};
+  };
+
+/*
+class CfgSounds
+{
+	class intro_music
+	{
+		name = "intro_music"; // Name for mission editor
+		sound[] = {\sound\intro_music.ogg, 1, 1.0};
+		titles[] = {0, ""};
+	};
+
+};
+*/
