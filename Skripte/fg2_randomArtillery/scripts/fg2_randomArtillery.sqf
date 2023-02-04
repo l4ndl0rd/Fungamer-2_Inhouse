@@ -11,11 +11,11 @@
 			50 => Radius um das Ziel herum (Default: 100)
 	___________________________________________________________________________
 	Author:		l4ndl0rd
-	Version:	0.0.2
-	Date:		23/01/2023
+	Version:	0.0.3
+	Date:		04/02/2023
 */
 
-if (!isDedicated) exitWith {};
+if (!isServer) exitWith {};
 
 private ["_arty", "_target", "_rounds","_pause", "_radius", "_ammo", "_tgt"];
 _arty = _this select 0;
