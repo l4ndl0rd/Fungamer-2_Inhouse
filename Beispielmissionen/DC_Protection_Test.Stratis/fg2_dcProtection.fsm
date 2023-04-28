@@ -1,0 +1,125 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, fg2_dcProtection">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-862.500000,-5350.000000,-775.000000,-5300.000000,0.000000,"Start"};
+item1[] = {"true",8,218,-862.500000,-5275.000000,-775.000000,-5225.000000,0.000000,"true"};
+item2[] = {"init_protection",2,250,-862.500000,-5200.000000,-775.000000,-5150.000000,0.000000,"init protection"};
+item3[] = {"make_unit_vulnerable",2,4346,-862.500000,-5050.000000,-775.000000,-5000.000000,0.000000,"make unit" \n "vulnerable" \n "again"};
+item4[] = {"player__reconnec",8,218,-862.500000,-5125.000000,-775.000000,-5075.000000,0.000000,"player" \n " reconnects"};
+item5[] = {"End",1,250,-862.500000,-4925.000000,-775.000000,-4875.000000,0.000000,"End"};
+item6[] = {"true",8,218,-862.500000,-4987.500000,-775.000000,-4937.500000,0.000000,"true"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,4};
+link3[] = {3,6};
+link4[] = {4,3};
+link5[] = {6,5};
+globals[] = {0.000000,0,0,0,0,640,480,1,51,8421504,1,-1293.848022,-350.917175,-4855.833496,-5434.803223,1953,1254,1};
+window[] = {2,-1,-1,-1,-1,967,208,1648,208,3,1971};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "fg2_dcProtection";
+        class States
+        {
+                /*%FSM<STATE "Start">*/
+                class Start
+                {
+                        name = "Start";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"diag_log ""FG2-DC-Protection loaded"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="init_protection";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "init_protection">*/
+                class init_protection
+                {
+                        name = "init_protection";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/"private _fg2_dcProtect = addMissionEventHandler [""HandleDisconnect"", {" \n
+                         "	params [""_unit"", ""_id"", ""_uid"", ""_name""];" \n
+                         "	_unit allowDamage false;" \n
+                         "}];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "player__reconnec">*/
+                                class player__reconnec
+                                {
+                                        itemno = 4;
+                                        priority = 0.000000;
+                                        to="make_unit_vulnerable";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "make_unit_vulnerable">*/
+                class make_unit_vulnerable
+                {
+                        name = "make_unit_vulnerable";
+                        itemno = 3;
+                        init = /*%FSM<STATEINIT""">*/"private _fg2_onReconnect = addMissionEventHandler [""OnUserSelectedPlayer"", {" \n
+                         "	params [""_networkId"", ""_playerObject""];" \n
+                         "	_playerObject addEventHandler [""Local""," \n
+                         "	{" \n
+                         "		removeEventHandler [""Local"", _thisEventHandler];" \n
+                         "		params [""_player""];" \n
+                         "		// code to handle _player" \n
+                         "		_player allowDamage true;" \n
+                         "	}];" \n
+                         "}];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 6;
+                                        priority = 0.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End">*/
+                class End
+                {
+                        name = "End";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Start";
+        finalStates[] =
+        {
+                "End",
+        };
+};
+/*%FSM</COMPILE>*/
