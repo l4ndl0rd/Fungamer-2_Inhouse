@@ -14,8 +14,8 @@ link2[] = {2,4};
 link3[] = {3,6};
 link4[] = {4,3};
 link5[] = {6,5};
-globals[] = {0.000000,0,0,0,0,640,480,1,51,8421504,1,-1293.848022,-350.917175,-4855.833496,-5434.803223,1953,1254,1};
-window[] = {2,-1,-1,-1,-1,967,208,1648,208,3,1971};
+globals[] = {0.000000,0,0,0,0,640,480,1,51,8421504,1,-1293.848022,-350.917175,-4855.833496,-5434.803223,1884,1254,1};
+window[] = {2,-1,-1,-1,-1,1264,1109,2549,505,3,1902};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -53,6 +53,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"private _fg2_dcProtect = addMissionEventHandler [""HandleDisconnect"", {" \n
                          "	params [""_unit"", ""_id"", ""_uid"", ""_name""];" \n
                          "	_unit allowDamage false;" \n
+                         "	removeMissionEventHandler [""HandleDisconnect"", _thisEventHandler];" \n
                          "}];"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -84,7 +85,10 @@ class FSM
                          "		params [""_player""];" \n
                          "		// code to handle _player" \n
                          "		_player allowDamage true;" \n
-                         "	}];" \n
+                         "	};" \n
+                         "" \n
+                         "	removeMissionEventHandler [""OnUserSelectedPlayer"", _thisEventHandler];" \n
+                         "	];" \n
                          "}];"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links

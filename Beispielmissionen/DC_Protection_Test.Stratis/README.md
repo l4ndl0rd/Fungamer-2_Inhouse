@@ -1,12 +1,20 @@
+# Fungamer-2_DC_Protection
 
-Protection for player disconnect. Player units are set to be invulnerable automatically to prevent them from dying. Once the player reconnects and the unit is local to their pc again, the invulnerability is removed.
+This FSM protects the players unit, in case they leave the server (involuntarily or not) from being killed. Particularly usefull for One-Life-Missions.
 
-!ATTENTION! initPlayerServer will never be executed on servers that have the remote execution deactivated. There is a workaround tho. Use the search function to find that. This mod was created for the community I roll 
-with, that does not have this limitation.
+Please be mindful tho, that those units will remain invulnerable in case the player decides to leave early and no other player comes in to replace them. It is therefore highly advised to have a gamemaster present, that can make sure, this invulnerabilty does not lead to undesired mission outcomes.
 
-Instruction:
+## Future Plans
 
--   place the fg2_dbProtection.fsm into your mission
--   create a initPlayerServer.sqf and execFSM the fsm from there
--   for debugging purpose it is highly recommended to have at least one gamemaster module for the logged admin present.
-    the protection will also fire if a player leaves early and noone takes over the unit - another player taking over that slot should be fine
+Turn the mission files into a working mod that does not have to be added to every mission
+
+# CHANGELOG
+
+### Version 0.2
+
+- **Tweaks**:
+	- Removed all MissionEventHandlers after code was executed
+
+### Version 0.1
+
+- First release
