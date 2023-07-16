@@ -1,1 +1,1 @@
-[] execVM "scripts\fg2_randomSpawn.sqf"
+[] execVM "scripts\fg2_randomSpawn.sqf";

@@ -6,8 +6,8 @@
 };
 
 
-author = l4ndl0rd;
-onLoadName = Auflösung Bild Test;
+author = "l4ndl0rd";
+onLoadName = "Auflösung Bild Test";
 onLoadMission = "";
 onLoadMissionTime = 1;
 
