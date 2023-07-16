@@ -5,7 +5,7 @@
 				ausgeschaltet werden sollen platzieren und Variablennamen vergeben
 	Init:		Wenn die Lichter von Anbeginn an ausgeschaltet sein sollen:
 
-				In eine initServer.sqf:
+				In die init.sqf:
 
 				[Variablenname, Radius] execVM "scripts\fg2_killLights.sqf";
 				
