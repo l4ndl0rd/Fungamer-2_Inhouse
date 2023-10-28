@@ -8,7 +8,6 @@ class EditorData
 	toggles=1;
 	mods[]=
 	{
-		"WBK_Zombies_AdvancedEditorSettings",
 		"3denEnhanced"
 	};
 	class ItemIDProvider
