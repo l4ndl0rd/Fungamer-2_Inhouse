@@ -8,6 +8,7 @@ class EditorData
 	toggles=1;
 	mods[]=
 	{
+		"WBK_Zombies_AdvancedEditorSettings",
 		"3denEnhanced"
 	};
 	class ItemIDProvider
@@ -17,9 +18,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={1885.2693,14.671767,5739.3965};
-		dir[]={0.91135818,-0.39212608,-0.12551354};
-		up[]={0.3884699,0.91990376,-0.053499952};
-		aside[]={-0.13644123,1.4179386e-007,-0.99069256};
+		dir[]={0.91131717,-0.39210844,-0.1255078};
+		up[]={0.38844198,0.91991895,-0.053496741};
+		aside[]={-0.13643353,0,-0.99064934};
 	};
 };
 binarizationWanted=0;
@@ -50,9 +51,6 @@ randomSeed=7197043;
 class ScenarioData
 {
 	author="l4ndl0rd";
-};
-class CustomAttributes
-{
 };
 class Mission
 {

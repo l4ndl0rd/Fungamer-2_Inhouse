@@ -15,7 +15,7 @@ link3[] = {3,6};
 link4[] = {4,3};
 link5[] = {6,5};
 globals[] = {0.000000,0,0,0,0,640,480,1,51,8421504,1,-1293.848022,-350.917175,-4855.833496,-5434.803223,1884,1254,1};
-window[] = {2,-1,-1,-1,-1,1264,1109,2549,505,3,1902};
+window[] = {2,-1,-1,-1,-1,1045,889,2329,286,3,1902};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -77,19 +77,30 @@ class FSM
                 {
                         name = "make_unit_vulnerable";
                         itemno = 3;
-                        init = /*%FSM<STATEINIT""">*/"private _fg2_onReconnect = addMissionEventHandler [""OnUserSelectedPlayer"", {" \n
-                         "	params [""_networkId"", ""_playerObject""];" \n
-                         "	_playerObject addEventHandler [""Local""," \n
-                         "	{" \n
-                         "		removeEventHandler [""Local"", _thisEventHandler];" \n
-                         "		params [""_player""];" \n
-                         "		// code to handle _player" \n
-                         "		_player allowDamage true;" \n
-                         "	};" \n
+                        init = /*%FSM<STATEINIT""">*/"//systemChat ""initPlayerServer.sqf"";" \n
                          "" \n
-                         "	removeMissionEventHandler [""OnUserSelectedPlayer"", _thisEventHandler];" \n
-                         "	];" \n
-                         "}];"/*%FSM</STATEINIT""">*/;
+                         "private _fg2_onReconnect = addMissionEventHandler" \n
+                         "[" \n
+                         "    ""OnUserSelectedPlayer""," \n
+                         "    { " \n
+                         "        params [""_networkId"", ""_playerObject""];" \n
+                         "         " \n
+                         "        _playerObject addEventHandler" \n
+                         "        [" \n
+                         "            ""Local""," \n
+                         "            { " \n
+                         "                params [""_player""]; " \n
+                         "                _player removeEventHandler [""Local"", _thisEventHandler]; " \n
+                         "" \n
+                         "                // code to handle _player " \n
+                         "                _player allowDamage true;" \n
+                         "                " \n
+                         "                //systemChat format[""Damage allowed for %1 %2"", _player, time]; " \n
+                         "            }" \n
+                         "        ]; " \n
+                         "        removeMissionEventHandler [""OnUserSelectedPlayer"", _thisEventHandler]; " \n
+                         "    }" \n
+                         "];"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
