@@ -31,9 +31,8 @@ _killRadius = param [1, 20000];
 
 //////////////////////////////////// DO NOT EDIT BELOW UNLESS YOU KNOW WHAT YOU ARE DOING //////////////////////////////////////////
 {
-	if (_x distance _killCenter <= _killRadius) then {			// Check radius	
-	_x switchLight "OFF"										// Lights out
+	if (_x distance _killCenter <= _killRadius) then {
+		// Check radius
+		_x switchLight "OFF"// Lights out
 	};
-
-
-} forEach (63 allObjects 0);									// (63 allObjects 0) is all lamps on the map
+} forEach (63 allObjects 0);// (63 allObjects 0) is all lamps on the map

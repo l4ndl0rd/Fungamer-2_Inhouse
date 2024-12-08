@@ -1,0 +1,13 @@
+
+class CfgFunctions
+{
+	class FG2
+	{
+        tag = "FG2";
+        class customInteractions {
+            file = "functions";
+                
+            class rollDice {};
+        };
+	};
+};
