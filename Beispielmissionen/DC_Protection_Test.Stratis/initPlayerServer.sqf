@@ -1,1 +1,0 @@
-[] execFSM "fg2_dcProtection.fsm";

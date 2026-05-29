@@ -1,0 +1,241 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1025;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
+	class ItemIDProvider
+	{
+		nextID=13;
+	};
+	class Camera
+	{
+		pos[]={1838.291,33.965378,5752.1831};
+		dir[]={0.87432712,-0.43429643,-0.21672702};
+		up[]={0.4215523,0.90076339,-0.10449336};
+		aside[]={-0.24060282,-2.5839836e-07,-0.97064316};
+	};
+};
+binarizationWanted=0;
+sourceName="TriggerFilter_Test";
+addons[]=
+{
+	"Desert",
+	"A3_Soft_F_MRAP_01",
+	"ace_realisticnames",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="Desert";
+			name="Desert";
+		};
+		class Item1
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=3555538;
+class ScenarioData
+{
+	author="l4ndl0rd";
+};
+class CustomAttributes
+{
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=8;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={1886.694,5.5465956,5728.9722};
+			angle=1.8178996;
+			class Attributes
+			{
+				text="turretFound_T";
+				condition="[typeOf (vehicle player)] call BIS_fnc_allTurrets isNotEqualTo [] && player inArea thisTrigger;";
+				onActivation="hint ""Hat nen Turm"";";
+				sizeA=5.6869998;
+				sizeB=5.704;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=4;
+			type="EmptyDetectorArea10x10";
+			atlOffset=-0.0050001144;
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={1886.7858,5.5518208,5728.9712};
+			angle=1.8178996;
+			class Attributes
+			{
+				text="noTurretFound_T";
+				condition="[typeOf (vehicle player)] call BIS_fnc_allTurrets isEqualTo [] && player inArea thisTrigger;";
+				onActivation="hint ""Hat keinen Turm"";";
+				sizeA=5.6869998;
+				sizeB=5.704;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=5;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={1895.269,5.6900001,5758.228};
+			angle=1.8178998;
+			class Attributes
+			{
+				name="checkVehicleTurret_T";
+				text="checkVehicleTurret_T";
+				onActivation="[typeOf (vehicle player)] execVM ""scripts\fg2_checkVehicleTurret.sqf"";";
+				sizeA=5.6869998;
+				sizeB=5.704;
+				sizeC=5;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=6;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item3
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1882.3488,5.5420952,5730.0703};
+				angles[]={6.278194,0,0.0049914722};
+			};
+			title="Zwei-Trigger-Lösung";
+			id=7;
+		};
+		class Item4
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1890.5129,5.6900001,5759.1021};
+			};
+			title="Ein-Trigger-Script-Lösung";
+			id=8;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1868.4338,7.7549419,5743.355};
+				angles[]={6.278194,1.8091644,0.0049914722};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9;
+			type="B_MRAP_01_F";
+			atlOffset=-2.8610229e-06;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1869.2704,8.340044,5749.0776};
+				angles[]={6.278194,1.7364771,0.0049914722};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=10;
+			type="B_MRAP_01_hmg_F";
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1874.5841,5.5927572,5745.7295};
+						angles[]={0,4.7748709,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=12;
+					type="B_Soldier_A_F";
+					atlOffset=-9.5367432e-07;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11;
+			atlOffset=-9.5367432e-07;
+		};
+	};
+};

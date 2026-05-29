@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Fungamer Custom Mods">
+    <Package name="Tylenol">
+
+        <Key ID="STR_FG2_Tylenol_Pack_Name">
+            <Original>Tylenol</Original>
+            <English>Tylenol</English>
+            <German>Tylenol</German>
+        </Key>
+
+        <Key ID="STR_FG2_Tylenol_Pack_Desc">
+            <Original>Pack of 10 tablets</Original>
+            <English>Pack of 10 tablets</English>
+            <German>Packung mit 10 Tabletten</German>
+        </Key>
+
+        <Key ID="STR_FG2_TylenolPack_ACE_Medical">
+            <Original>Administer Tylenol</Original>
+            <English>Administer Tylenol</English>
+            <German>Tylenol verabreichen</German>
+        </Key>
+
+        <Key ID="STR_FG2_TylenolPack_ACE_Medical_Progress">
+            <Original>Swallowing painkiller</Original>
+            <English>Swallowing painkiller</English>
+            <German>Schlucke Schmerzmittel</German>
+        </Key>
+		
+        <Key ID="STR_FG2_Tylenol_Desc_Use">
+            <Original>Reduces pain over time.</Original>
+            <English>Reduces pain over time.</English>
+            <German>Reduziert Schmerzen über Zeit.</German>
+        </Key>
+
+    </Package>
+</Project>
