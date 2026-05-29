@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="FG2_Client_View_Distance">
+    <Package name="FG2_CVD">
+        <Key ID="STR_FG2_CVD_TITLE">
+            <English>FG2 VIEW DISTANCE</English>
+            <German>FG2 SICHTWEITE</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_VALUES">
+            <English>VALUES</English>
+            <German>WERTE</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESETS">
+            <English>PRESETS</English>
+            <German>PROFILE</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_VIEW">
+            <English>View</English>
+            <German>Sicht</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_OBJECTS">
+            <English>Objects</English>
+            <German>Objekte</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_SHADOWS">
+            <English>Shadows</English>
+            <German>Schatten</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PIP">
+            <English>PiP</English>
+            <German>PiP</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_FOOT_SHORT">
+            <English>FOOT</English>
+            <German>INF</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_VEHICLE_SHORT">
+            <English>VEH</English>
+            <German>FZG</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_HELI_SHORT">
+            <English>HELI</English>
+            <German>HELI</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_PLANE_SHORT">
+            <English>PLANE</English>
+            <German>FLUG</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_FOOT">
+            <English>Foot</English>
+            <German>Infanterie</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_VEHICLE">
+            <English>Vehicle</English>
+            <German>Fahrzeug</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_HELI">
+            <English>Heli</English>
+            <German>Heli</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_PRESET_PLANE">
+            <English>Plane</English>
+            <German>Flugzeug</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_LOAD">
+            <English>LOAD</English>
+            <German>LADEN</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_SAVE">
+            <English>SAVE</English>
+            <German>SICHERN</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_APPLY">
+            <English>APPLY</English>
+            <German>ANWENDEN</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_CLOSE">
+            <English>CLOSE</English>
+            <German>SCHLIESSEN</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_CURRENT_SETTINGS">
+            <English>Current Settings</English>
+            <German>Aktuelle Werte</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_VD_SHORT">
+            <English>VD</English>
+            <German>SW</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_OVD_SHORT">
+            <English>OVD</English>
+            <German>OSW</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_SHD_SHORT">
+            <English>SHD</English>
+            <German>SCH</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_OFF">
+            <English>OFF</English>
+            <German>AUS</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_ACE_CATEGORY">
+            <English>FG2 View Distance</English>
+            <German>FG2 Sichtweite</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_ACE_OPEN_MENU">
+            <English>Open Menu</English>
+            <German>Menü öffnen</German>
+        </Key>
+        <Key ID="STR_FG2_CVD_ACE_LOAD_PRESET">
+            <English>Load %1 Preset</English>
+            <German>%1-Profil laden</German>
+        </Key>
+    </Package>
+</Project>
