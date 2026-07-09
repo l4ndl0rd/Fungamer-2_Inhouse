@@ -66,7 +66,7 @@ _crate = _this select 0;
 	//Konserven
 	_crate addItemCargoGlobal ["ACE_salineIV", 5];
 	_crate addItemCargoGlobal ["ACE_salineIV_500", 10];
-    _crate addItemCargoGlobal ["ACE_salineIV_250", 5]
+    _crate addItemCargoGlobal ["ACE_salineIV_250", 5];
 	//Sonstiges
 	_crate addItemCargoGlobal ["ACE_tourniquet", 10];
 	_crate addItemCargoGlobal ["ACE_splint", 5];
